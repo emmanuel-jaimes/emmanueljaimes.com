@@ -1,0 +1,8 @@
+html{ font-family: 'Courier Prime', monospace;}  
+
+div{ border: 2px solid red; }
+
+.box{ display: grid;
+      grid-template-columns:(4, fr);
+      grid-template-rows:(2);}
+.box1{grid-column: 1 /span 2;}
