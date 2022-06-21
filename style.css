@@ -15,17 +15,15 @@ body{
       padding: 1em 5em 5em 5em;
 }
 .resume{
-      margin: auto;
       width: 100%;
-      height: 100%;
-      padding: auto;
       border: 1px solid darksalmon; 
 }
 
+.githubButton{
+      align-content: center;
+}
 
 .footer{
       background-color: gainsboro;
-      height: 150px;
-      width: 100%;
-      padding: 0 10em 5em 5em;
+      height: 150px;      
 }
