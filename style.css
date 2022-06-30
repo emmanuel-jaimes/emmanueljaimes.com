@@ -1,66 +1,101 @@
-html{ font-family: 'Courier Prime', monospace;
-      background-color: gainsboro;
+html{     
+      font-family: 'Cardo', serif;
+      font-family: 'Montserrat', sans-serif;
 }  
 
 body{
-      margin-left: 1em;
       height: 100%;
       background-color: whitesmoke;
+      display: grid;
 }
 
 .menu{
       display: flex;
       flex-direction: row;
-      border: 1px solid salmon;
+      /* border: 1px solid orangered; */
       flex-wrap: nowrap;
-      background-color: antiquewhite;
-      justify-content: space-evenly;
+      justify-items: right;
+      /* background-color: goldenrod; */
 }
 
 .about, .experience, .work, .contact{
-      padding: 1em 4em 1em 4em;
-      background-color: aliceblue;
-      display: flex;
+      padding: 2em 4em .5em 4em;
+      /* background-color: aquamarine; */
 }
 
 .box{  
-      display:grid;
-      border: 1px solid grey;
-      grid-template-columns: (3, 40px);
-      grid-template-rows:3;
-      height: 10em;
+      display: grid;
+      /* border: 1px solid grey; */
+      grid-template-columns: 15% 70% 15%;
+      grid-template-rows: 3;
+      /* justify-items: right; */
 }
-
 .box1{
-      align-items: center;
       grid-column: 1 / span 3;
       grid-row: 1;
-      height: 100%;
+      /* border: 1px solid red; */
+      display: flex;
+      /* background-color: blueviolet; */
+      height: fit-content;
+      justify-self: right;
 }
 .box2{
-      grid-column: 1 / span 1;
+      grid-column: 1;
       grid-row: 2;
 }
 .box3{
-      grid-column: 2 / span 1;
+      grid-column: 2;
       grid-row: 2;
+      justify-self: left;
 }
 .box4{
-      grid-column: 3 / span 1;
+      grid-column: 3;
       grid-row: 2;
 }
 .box5{
-      grid-column: 1 / span 1;
+      grid-column: 1;
       grid-row: 3;
-      display: flex;
-      justify-content: center;
-      align-items: center;
 }
 .box6{
-      grid-column: 2 / span 1;
+      grid-column: 2;
       grid-row: 3;
+      display: grid;
+      grid-template-columns: 2;
+      grid-template-rows: 2;
+      height: fit-content;
+      justify-content: space-evenly;
 }
 .box7{
-      grid-column: 3 / span 1;
+      grid-column: 3;
       grid-row: 3;
-      }
+}
+
+.gh{
+      padding: 1em 0 1em 0;
+}
+
+.githubButton{
+      height: 64px;
+      grid-row: 2;
+      grid-column: 1;
+}
+
+.li{
+      padding: 1em 0 1em 0;
+}
+
+.linkedInButton{
+      height: 64px;
+      grid-row: 2;
+      grid-column: 2;
+}
+
+.introHeader{
+      font-family: 'Montserrat';
+      font-weight: 700;
+}
+
+.introBody{
+      font-family: 'Cardo';
+      max-width: 75%;
+}
