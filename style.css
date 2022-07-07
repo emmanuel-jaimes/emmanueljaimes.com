@@ -9,87 +9,40 @@ body{
       display: grid;
 }
 
-.menu{
-      display: flex;
-      flex-direction: row;
-      /* border: 1px solid orangered; */
-      flex-wrap: nowrap;
-      justify-items: right;
-      /* background-color: goldenrod; */
-}
-
-.about, .experience, .work, .contact{
-      padding: 2em 4em .5em 4em;
-      /* background-color: aquamarine; */
-}
-
-.box{  
+/* global menu */
+.layoutManager{  
       display: grid;
-      /* border: 1px solid grey; */
       grid-template-columns: 15% 70% 15%;
       grid-template-rows: 3;
-      /* justify-items: right; */
 }
-.box1{
+.menuManager{
       grid-column: 1 / span 3;
       grid-row: 1;
-      /* border: 1px solid red; */
       display: flex;
-      /* background-color: blueviolet; */
       height: fit-content;
       justify-self: right;
 }
-.box2{
+.menu{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-items: right;
+}
+.about, .experience, .work, .contact{
+      padding: 2em 4em .5em 4em;
+}
+
+/* index */
+.index2, .experience2, .work2, .contact2{
       grid-column: 1;
       grid-row: 2;
 }
-.box3{
+
+.index3, .experience3, .work3, .contact3{
       grid-column: 2;
       grid-row: 2;
       justify-self: left;
 }
-.box4{
-      grid-column: 3;
-      grid-row: 2;
-}
-.box5{
-      grid-column: 1;
-      grid-row: 3;
-}
-.box6{
-      grid-column: 2;
-      grid-row: 3;
-      display: grid;
-      grid-template-columns: 2;
-      grid-template-rows: 2;
-      height: fit-content;
-      justify-content: space-evenly;
-}
-.box7{
-      grid-column: 3;
-      grid-row: 3;
-}
-
-.gh{
-      padding: 1em 0 1em 0;
-}
-
-.githubButton{
-      height: 64px;
-      grid-row: 2;
-      grid-column: 1;
-}
-
-.li{
-      padding: 1em 0 1em 0;
-}
-
-.linkedInButton{
-      height: 64px;
-      grid-row: 2;
-      grid-column: auto;
-}
-
 .introHeader{
       font-family: 'Montserrat';
       font-weight: 700;
@@ -100,13 +53,55 @@ body{
       max-width: 75%;
 }
 
+.index4, .experience4, .work4, .contact4{
+      grid-column: 3;
+      grid-row: 2;
+}
+.index5, .experience5, .work5, .contact5{
+      grid-column: 1;
+      grid-row: 3;
+}
+
+.index6{
+      grid-column: 2;
+      grid-row: 3;
+      display: grid;
+      grid-template-columns: 2;
+      grid-template-rows: 2;
+      height: fit-content;
+      justify-content: space-evenly;
+}
+.gh{
+      padding: 1em 0 1em 0;
+}
+.githubButton{
+      height: 64px;
+      grid-row: 2;
+      grid-column: 1;
+}
+.li{
+      padding: 1em 0 1em 0;
+}
+.linkedInButton{
+      height: 64px;
+      grid-row: 2;
+      grid-column: auto;
+}
+
+.index7, .experience7, .work7, .contact7{
+      grid-column: 3;
+      grid-row: 3;
+}
+
+/* experience */
+
 .experienceSummary{
       padding-top: 5em;
       font-family: 'Cardo';
       max-width: 75%;
 }
 
-.header{
+.experienceHeader{
       font-family: 'Montserrat';
 }
 
@@ -114,14 +109,28 @@ body{
       justify-self: center;
       padding-top: 4em;
 }
-
 .resumeContainer{
       padding: .5em 0 .5em 0;
       width: 100%;
       height: 20em;
 }
-
 .resume{
       width: 35em;
       height: 77em;
 }
+
+/* work */
+/* to be updated */
+
+/* contact */
+
+.contact3{
+      display: grid;
+      padding-top: 5em;
+}
+
+.contactFields{
+      justify-self: left;
+      padding: 2em 2em 2em 2em;
+}
+

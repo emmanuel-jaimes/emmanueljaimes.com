@@ -6,8 +6,8 @@
     </head>
 
     <body>
-        <div class="box">
-            <div class="box1">
+        <div class="layoutManager">
+            <div class="menuManager">
                 <div class="menu">
                     <div class="about">
                         <a href="index.html">about</a>
@@ -24,19 +24,50 @@
                 </div>
             </div>
 
-            <div class="box2"></div>
-            <div class="box3">contact</div>
-            <div class="box4"></div>
-            <div class="box5"></div>
-            <div class="box6">
-                <div class="li">LinkedIn</div>
+            <div class="contact2"></div>
+            
+            <div class="contact3">Lets Connect!
+                <div class="contactFields">
+                    <form action="action_page.php">
+                        <div>
+                            <label for="Name">Name</label>
+                        </div>
+                        <div>
+                            <input type="text" id="name" name="name" placeholder="Your name.." style="width:300px; height:35px;">
+                        </div>
+                        <div>
+                            <label for="Email">Email</label>
+                        </div>
+                        <div>
+                            <input type="text" id="email" name="email" placeholder="Your E-mail.." style="width:300px; height:35px;">
+                        </div>
+
+                        <div>
+                            <label for="subject">Subject</label>
+                        </div>
+                        <div>
+                            <textarea id="subject" name="subject" placeholder="Write your message here.." style="width:300px; height:200px"></textarea>
+                        </div>
+                        <div>
+                            <input type="submit" value="Submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="contact4"></div>
+            <div class="contact5"></div>
+
+            <div class="contact6">
+                <div class="li">Message me on LinkedIn</div>
                     <img class="linkedInButton"
                     src="LI-In-Bug.png"
                     onclick="window.open('https://www.linkedin.com/in/jaimes-emmanuel', '_blank')"
                     >   
                 </div>
             </div>
-            <div class="box box7"></div>
+            
+            <div class="contact7"></div>
         </div>
         
         
