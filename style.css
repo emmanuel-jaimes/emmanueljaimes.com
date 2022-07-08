@@ -38,7 +38,7 @@ body{
       grid-row: 2;
 }
 
-.index3, .experience3, .work3, .contact3{
+.index3, .experience3, .work3{
       grid-column: 2;
       grid-row: 2;
       justify-self: left;
@@ -86,6 +86,7 @@ body{
       height: 64px;
       grid-row: 2;
       grid-column: auto;
+      justify-self: center;
 }
 
 .index7, .experience7, .work7, .contact7{
@@ -127,10 +128,21 @@ body{
 .contact3{
       display: grid;
       padding-top: 5em;
+      justify-self: center;
+      /* border: solid 2px red; */
+
 }
 
+
+.contact6{
+      padding-top: 3em;
+      justify-self: left;
+}
 .contactFields{
       justify-self: left;
       padding: 2em 2em 2em 2em;
+}
+.contactHeader{
+      padding-bottom: 1em;
 }
 
