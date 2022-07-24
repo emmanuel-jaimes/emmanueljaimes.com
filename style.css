@@ -14,7 +14,6 @@ body{
 .layoutManager{  
       display: grid;
       grid-template-columns: 15% 70% 15%;
-      /* grid-template-rows: 3; */
 }
 .menuManager{
       grid-column: 1 / span 3;
@@ -24,8 +23,9 @@ body{
       display: flex;
       height: fit-content;
       justify-self: right;
-      background-color: aquamarine;
-      background-blend-mode: lighten;
+      background-color: #eeeeee;
+      opacity: 90%;
+      
 }
 .menu{
       display: flex;
@@ -49,6 +49,7 @@ body{
 
 .index3, .experience3{
       justify-self: left;
+      grid-column: 2;
 }
 .introHeader{
       font-family: 'Montserrat';
@@ -57,18 +58,11 @@ body{
 .introBody{
       font-family: 'Cardo';
       max-width: 75%;
+      letter-spacing: 1px;
 }
 .introBodyConclusion{
       font-family: 'Montserrat';
-}
-
-.index4, .experience4, .work4, .contact4{
-      grid-column: 3;
-      /* grid-row: 2; */
-}
-.index5, .experience5, .work5, .contact5{
-      grid-column: 1;
-      /* grid-row: 3; */
+      letter-spacing: 1px;
 }
 
 .index6{
@@ -77,12 +71,8 @@ body{
       height: fit-content;
       justify-content: space-evenly;
 }
-.gh{
-      padding: 1em 0 1em 0;
-}
-.githubButton1{
+.githubButton{
       height: 72px;
-      /* grid-row: 2; */
       grid-column: 1;
       justify-self: center;
 }
@@ -97,11 +87,6 @@ body{
       justify-self: center;
 }
 
-.index7, .experience7, .work7, .contact7{
-      grid-column: 3;
-      /* grid-row: 3; */
-}
-
 /* experience */
 
 .experienceSummary{
@@ -109,70 +94,22 @@ body{
       font-family: 'Cardo';
       max-width: 75%;
 }
-
 .experienceHeader{
       font-family: 'Montserrat';
-}
-
-.experience6{
-      justify-self: center;
-}
-/* .resumeContainer{
-      padding: .5em 0 .5em 0;
-      width: 100%;
-      height: 20em;
-} */
-.resume{
-      width: 35em;
-      height: 77em;
 }
 
 /* work */
 /* to be updated */
 
-.githubButton2{
-      height: 64px;
-      /* grid-row: 1; */
-      grid-column: auto;
-      justify-self: center;
-}
-
-.work6{
-      background-color: white;
-}
-
-/* .frameLayout{
-      border: solid 2px red;
-      display: grid;
-      grid-template-columns: 3;
-      grid-template-rows: 2; 
-} */
-/* .frame{
-      justify-content: center;
-      border: solid 1px burlywood;
-} */
-
-.f3{  /* anchor */
-      grid-column: 3;
-      /* grid-row: 1; */
-}
-
 /* contact */
 
 .contact3, .work3{
+      grid-column: 2;
       display: grid;
       padding-top: 2em;
       justify-self: center;
 }
 
-/* .contact6{
-      padding-top: 3em;
-      justify-self: left;
-} */
-/* .contactFields{
-      justify-self: left;
-      padding: 2em 2em 2em 2em;
-} */
 .contactHeader, .workHeader{
       padding-top: 1em;
       justify-self: center;
