@@ -20,6 +20,7 @@ body{
       background-color: #30343F;
       display: grid;
       color: #FAFAFF;
+      margin: 0%;
 }
 
 /* global menu */
@@ -27,29 +28,48 @@ body{
       display: grid;
       grid-template-columns: 15% 70% 15%;
 }
+
 .menuManager{
-      grid-column: 1 / span 3;
-      grid-row: 1;
+      grid-column: 1;
       position: fixed;
-      top: 0;
       display: flex;
       height: fit-content;
-      justify-self: right;
+      justify-self: left;
       background-color: #30343F;
       opacity: 90%;
-      vertical-align: middle;
+      vertical-align: bottom;
 }
 .menu{
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       flex-wrap: nowrap;
-      justify-items: right;
+      justify-items: left;
+      vertical-align: bottom;
 }
 
 /* menu items */
-.about, .experience, .work, .contact{
-      padding: 2em 4em .5em 4em;
+.about{
+      padding: 2em 2em .5em 2em;
       color: #FAFAFF;
+      grid-row: 1;
+}
+
+.experience{
+      padding: 2em 2em .5em 2em;
+      color: #FAFAFF;
+      grid-row: 2;
+}
+
+.work{
+      padding: 2em 2em .5em 2em;
+      color: #FAFAFF;
+      grid-row: 3;
+}
+
+.contact{
+      padding: 2em 2em 2em 2em;
+      color: #FAFAFF;
+      grid-row: 4;
 }
 
 .foto{
