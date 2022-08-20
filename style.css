@@ -1,6 +1,7 @@
 html{     
       font-family: 'Cardo', serif;
       font-family: 'Montserrat', sans-serif;
+      font-family: 'Source Code Pro', monospace;
       scroll-behavior: smooth;
 }  
 
@@ -26,7 +27,7 @@ body{
 /* global menu */
 .layoutManager{  
       display: grid;
-      grid-template-columns: 15% 70% 15%;
+      grid-template-columns: 20% 60% 20%;
 }
 
 .menuManager{
@@ -35,8 +36,6 @@ body{
       display: flex;
       height: fit-content;
       justify-self: left;
-      background-color: #30343F;
-      opacity: 90%;
       vertical-align: bottom;
 }
 .menu{
@@ -45,29 +44,34 @@ body{
       flex-wrap: nowrap;
       justify-items: left;
       vertical-align: bottom;
+      font-family: 'Montserrat';
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      /* background-color: black; */
 }
 
 /* menu items */
 .about{
-      padding: 2em 2em .5em 2em;
+      padding: 2em 3em .5em 2em;
       color: #FAFAFF;
       grid-row: 1;
 }
 
 .experience{
-      padding: 2em 2em .5em 2em;
+      padding: 2em 3em .5em 2em;
       color: #FAFAFF;
       grid-row: 2;
 }
 
 .work{
-      padding: 2em 2em .5em 2em;
+      padding: 2em 3em .5em 2em;
       color: #FAFAFF;
       grid-row: 3;
 }
 
 .contact{
-      padding: 2em 2em 2em 2em;
+      padding: 2em 3em 2em 2em;
       color: #FAFAFF;
       grid-row: 4;
 }
@@ -76,6 +80,8 @@ body{
       width: 100%;
       height: auto;
       grid-column: 1 / span 3;
+      z-index: auto;
+      filter: brightness(80%);
 }
 
 /* index */
@@ -92,15 +98,19 @@ body{
 }
 .introHeader{
       font-family: 'Montserrat';
-      font-weight: 700;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 2px;
 }
 .introBody{
-      font-family: 'Cardo';
+      font-family: 'Source Code Pro';
+      font-weight: 500;
       max-width: 75%;
       letter-spacing: 1px;
 }
 .introBodyConclusion{
       font-family: 'Montserrat';
+      font-weight: 500;
       letter-spacing: 1px;
 }
 
@@ -121,7 +131,6 @@ body{
 }
 .linkedInButton{
       height: 64px;
-      /* grid-row: 2; */
       grid-column: auto;
       justify-self: center;
 }
@@ -130,11 +139,13 @@ body{
 
 .experienceSummary{
       padding-top: 5em;
-      font-family: 'Cardo';
+      font-family: 'Source Code Pro';
+      font-weight: 300;
       max-width: 75%;
 }
 .experienceHeader{
       font-family: 'Montserrat';
+      font-weight: 500;
 }
 
 /* work */
@@ -152,5 +163,8 @@ body{
 .contactHeader, .workHeader{
       padding-top: 1em;
       justify-self: center;
+      font-family: 'Montserrat';
+      font-weight: 600;
+      text-transform: uppercase;
 }
 
