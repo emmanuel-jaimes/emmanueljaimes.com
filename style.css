@@ -1,170 +1,145 @@
-html{     
-      font-family: 'Cardo', serif;
-      font-family: 'Montserrat', sans-serif;
-      font-family: 'Source Code Pro', monospace;
-      scroll-behavior: smooth;
-}  
-
-/* #30343F gunmetal
-#FAFAFF ghost white
-#E4D9FF lavender blue
-#273469 
-#1E2749 */
-
-a{
-      color: #FAFAFF;
-      text-decoration-line: none;
+html{
+  font-family: 'Cardo', serif;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Source Code Pro', monospace;
+  scroll-behavior: smooth;
+  font-size: larger;
 }
 
-body{
-      height: 100%;
-      background-color: #30343F;
-      display: grid;
-      color: #FAFAFF;
-      margin: 0%;
+body {
+  background-color: #1c221f;
+  color: #A2E3C4;
+  font-family: Montserrat;
+  scroll-behavior: smooth;
+  padding: 50px;
 }
 
-/* global menu */
-.layoutManager{  
-      display: grid;
-      grid-template-columns: 20% 60% 20%;
-}
 
-.menuManager{
-      grid-column: 1;
-      position: fixed;
-      display: flex;
-      height: fit-content;
-      justify-self: left;
-      vertical-align: bottom;
-}
-.menu{
-      display: flex;
-      flex-direction: column;
-      flex-wrap: nowrap;
-      justify-items: left;
-      vertical-align: bottom;
-      font-family: 'Montserrat';
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      /* background-color: black; */
-}
+/* ======================== MENU ======================== */
+  #menu {
+    height: auto;
+    position: fixed;
+    top: center;
+    right: 0;
+    width: 200px;
+    color: #A2E3C4;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  #menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  #menu li {
+    display: block;
+    padding: 20px;
+    background-color: transparent;
+  }
+  #menu li:hover{
+    background-color: #7E8D85;
+  } 
+  #menu a {
+    color: #A2E3C4;
+    text-decoration: none;
+  }
 
-/* menu items */
-.about{
-      padding: 2em 3em .5em 2em;
-      color: #FAFAFF;
-      grid-row: 1;
-}
+  /* ======================== CONNECTIONS ======================== */
+  #connections {
+    position: fixed;
+  }
+  #connections li {
+    background-color: transparent;
+    padding: 20px;
+  }
+  #connections li:hover {
+    background-color: #A2E3C4;
+  }
+  .linkedInButton {
+    height: 64px;
+  }
+  .githubButton {
+    height: 64px;
+  }
 
-.experience{
-      padding: 2em 3em .5em 2em;
-      color: #FAFAFF;
-      grid-row: 2;
-}
+  .grid-item {
+    text-align: left;
+  }
 
-.work{
-      padding: 2em 3em .5em 2em;
-      color: #FAFAFF;
-      grid-row: 3;
-}
+  li {
+    display: inline-block;
+    padding: 20px;
+    background-color: #333;
+    border-bottom: #F0F7F4;
+    border-radius: 2%;
+  }
+  
 
-.contact{
-      padding: 2em 3em 2em 2em;
-      color: #FAFAFF;
-      grid-row: 4;
-}
+  /* ======================== ABOUT ======================== */
+  #about h2 {
+    font-size: 5em;
+    letter-spacing: 2px;
+    padding-top: 10%;
+    font-stretch: extra-expanded;
+  }
+  #about p {
+    width: 80%;
+    font-weight: 500;
+    padding-left: 5px;
+    color: #F0F7F4;
+  }
 
-.foto{
-      width: 100%;
-      height: auto;
-      grid-column: 1 / span 3;
-      z-index: auto;
-      filter: brightness(80%);
-}
+  #about  h3{
+    padding-left: 5px;
+    color: #A2E3C4;
+    letter-spacing: 1px;
+  }
 
-/* index */
-.index3{
-      padding-top: 5em;
-}
-.index2, .experience2, .work2, .contact2{
-      grid-column: 2; 
-}
+  /* ======================== SKILLS ======================== */
+  #skills {
+    padding-top: 10%;
+  }
 
-.index3, .experience3{
-      justify-self: left;
-      grid-column: 2;
-}
-.introHeader{
-      font-family: 'Montserrat';
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-}
-.introBody{
-      font-family: 'Source Code Pro';
-      font-weight: 500;
-      max-width: 75%;
-      letter-spacing: 1px;
-}
-.introBodyConclusion{
-      font-family: 'Montserrat';
-      font-weight: 500;
-      letter-spacing: 1px;
-}
+  #skills li {
+    padding-top: 20px;
+    font-weight: 600;
+  }
 
-.index6{
-      grid-column: 2;
-      grid-template-columns: 2;
-      height: fit-content;
-      justify-content: space-evenly;
-}
-.githubButton{
-      height: 72px;
-      grid-column: 1;
-      justify-self: center;
-}
-.li{
-      padding: 1em 0 0 0;
-      justify-self: center;
-}
-.linkedInButton{
-      height: 64px;
-      grid-column: auto;
-      justify-self: center;
-}
+  /* ======================== EXPERIENCE ======================== */
+  #experience {
+    padding-top: 10%;
+  }
 
-/* experience */
+  #experience h4{
+    font-family: 'Cardo';
+    letter-spacing: 1px;
+    font-size: large;
+  }
+  
+  #experience li {
+    width: 40%;
+    background-color: #B3BFB8;
+    color: #1c221f;
+    font-weight: 600;
+  }
 
-.experienceSummary{
-      padding-top: 5em;
-      font-family: 'Source Code Pro';
-      font-weight: 300;
-      max-width: 75%;
-}
-.experienceHeader{
-      font-family: 'Montserrat';
-      font-weight: 500;
-}
+  #experience p {
+    letter-spacing: 1px;
+  }
 
-/* work */
-/* to be updated */
+  /* ======================== PROJECTS ======================== */
+  #projects {
+    padding-top: 10%;
+  }
 
-/* contact */
+  #projects li {
+    width: 40%;
+  }
 
-.contact3, .work3{
-      grid-column: 2;
-      display: grid;
-      padding-top: 2em;
-      justify-self: center;
-}
-
-.contactHeader, .workHeader{
-      padding-top: 1em;
-      justify-self: center;
-      font-family: 'Montserrat';
-      font-weight: 600;
-      text-transform: uppercase;
-}
-
+  #projects h5 {
+    width:fit-content;
+    display: inline-block;
+    background-color: #A2E3C4;
+    color: #333;
+    padding: 10px;
+  }

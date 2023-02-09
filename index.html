@@ -1,83 +1,145 @@
+<!DOCTYPE html>
 <html>
-
-<head>
-    <title> ## Under Construction ## </title>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Emmanuel Jaimes</title>
+    <style>    
+        @import url('https://fonts.googleapis.com/css2?family=Cardo&family=Montserrat:wght@400;500;600;800&family=Source+Code+Pro:wght@300;400&display=swap');    
+    </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="app.js"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Cardo&family=Montserrat:wght@400;500;600;800&family=Source+Code+Pro:wght@300;400&display=swap');    </style> 
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
+      .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 4fr 1fr;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="header-picture">
+        <img src="header-picture.jpg" alt="">
+      </div>
+      <nav>
+      </nav>
+    </header>
+    <header>
+      <nav>
+        <div id="menu">
+          <ul>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#experience">EXPERIENCE</a></li>
+            <li><a href="#projects">PROJECTS</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
     
-    <div class="layoutManager">
-
-        <div class="menuManager">
-            <div class="menu">
-                <div class="about">
-                    <a href="#index2">about</a>
-                </div>
-                <div class="experience">
-                    <a href="#experience2">experience</a>
-                </div>
-                <div class="work">
-                    <a href="#work2">work</a>
-                </div>
-                <div class="contact">
-                    <a href="#contact2">contact</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- INDEX -->
-        <div id="index2"></div>
-
-        <img class="foto" src="pentacrest.png" alt="pentacrest">  
-
-        <div class="index3">
-            <h2 class="introHeader"><b>Hey, I am Emmanuel Jaimes</b></h2>
-            <h4>Software Engineer/Developer</h4>
-            <p class="introBody"> I am a student at the University of Iowa.
-                I am Majoring in Computer Science & Engineering and I enjoy writing lines of 
-                grammatically incorrect sentences, wordMorphingNamesForVariables, appealing 
-                <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; indented lines of code; 
-            </p>
-            <p class="introBodyConclusion">and here is a little bit about my journey so far...</p>
-        </div>
-        <!-- end of index section -->
-        
-        <!-- EXPERIENCE -->
-        <div id="experience2"></div>
-
-        <div class="experience3">
-            <div class="experienceSummary">
-                <h4>Currently I am...</h4>
-                <h2 class="experienceHeader">Interning as <b>Product Engineer at John Deere</b></h2>
-            </div>
-        </div>
-        <!-- end of experience section -->
-
-        <!-- WORK -->
-        <div id="work2"></div>
-            
-        <div class="work3">
-            <h2 class="workHeader">Checkout my work on GitHub</h2>
-            <img class="githubButton" 
-            src="GitHub-Mark-Light-64px.png" 
-            onclick="window.open('http://github.com/emmanuel-jaimes','_blank')">  
-        </div>
-        <!-- end of work -->
-
-        <!-- CONTACT -->
-        <div id="contact2"></div>
-        <div class="contact3">
-            <h2 class="contactHeader">Lets Connect!</h2>
-            <img class="linkedInButton"
+    <main>
+    
+    <div class="grid-container">
+      <div class="grid-item">
+        <div id="connections">
+          <ul>
+            <li><a href="#linkedin"></a> 
+              <img class="linkedInButton"
                 src="LI-In-Bug.png"
-                onclick="window.open('https://www.linkedin.com/in/jaimes-emmanuel', '_blank')">         
-            <div class="li">Find me on LinkedIn</div>
+                onclick="window.open('https://www.linkedin.com/in/jaimes-emmanuel', '_blank')">
+            </li>
+            <br>
+            <li><a href="#github"></a>
+              <img class="githubButton" 
+              src="GitHub-Mark-Light-64px.png" 
+              onclick="window.open('http://github.com/emmanuel-jaimes','_blank')">
+            </li>
+          </ul>
         </div>
+      </div>
+
+      <div class="grid-item">
+        <section id="about">
+          <h2>About me,</h2>
+          <p>Never before had I seen something like it, I powered on my first computer, IBM, at the age of four and never looked back.
+            Now I am continuing to learn the ins-and-outs of a computer, from hardware to software, with ambitions of developing solutions of the future.</p>
+          <h3>My name is Emmanuel Jaimes and I am a student at the University of Iowa majoring in <b>Computer Science & Engineering.</b></h3>
+          <p>Feel free to connect with me on LinkedIn, looking for internships to strengthen learning and apply solutions to real-world problems. </p>
+        </section>
+    
+        <section id="skills">
+          <h2>Skills</h2>
+          <ul id="skill-list">
+            <li>Spanish</li>
+            <li>English</li>
+            <li>Communication</li>
+            <li>Teamwork</li>
+            <li>Creativity</li>
+            <li>Leadership</li>
+            <li>Problem Solving</li>
+            <br><br>
+            <li>Java</li>
+            <li>C++</li>
+            <li>Python</li>
+            <li>HTML/CSS/JavaScript</li>
+          </ul>
+        </section>
+
+        <section id="experience">
+          <h2>Experience</h2>
+          <ul id="experience-list">
+            <li>
+              <h3>Product Engineer</h3>
+              <h4>John Deere</h4>
+              <h5>Dubuque, IA</h5>
+              <p>▪ Integrated and developed GUI testing for Obstacle Intelligence project assignments using Python <br></p>
+              <p>▪ Worked on Client-Server Rest API using Java to ensure proper calls and responses behaved and functioned
+                as intended <br></p>
+              <p>▪ Communicated and worked with team members daily to meet deadlines efficiently and effectively while
+                learning production and development workflow <br></p>
+              <p> ▪ Asked questions frequently to build and strengthen understanding of new concepts and environments <br></p>
+            </li>
+            <li>
+              <h3>IT Support Student</h3>
+              <h4>College of Public Health, U. Iowa</h4>
+              <h5>Iowa City, IA</h5>
+              <p>• Provided IT support for all faculty, students, and staff of the College of Public Health Building in a
+                comprehensive and timely manner </p>
+              <p>• Effectively communicate via phone, email, or physically to every request and understand issues to provide
+                  support and find solutions to every case</p>
+              <p>• Manage and log equipment in a database to keep organization structure and management of the building
+                  for easy collaborative work with team members</p>
+              <p>• Learn valuable administrative systems and processes in daily operations when managing 
+                network assets and devices</p>
+            </li>
+          </ul>
+        </section>
+
+        <section id="projects">
+          <h2>Projects</h2>
+          <ul id="project-list">
+            <li>
+              <h3>Wordle Remix</h3>
+              <p>Hackathon-esque class assignment where alongside teammates developed the classic New York Times Wordle
+                game but with a twist through Java</p>
+              <h5>Java</h5>
+              <h5>Server/Client Networking</h5>
+            </li>
+            <li>
+              <h3>Snake Game</h3>
+              <p>Developing a fun personal project on a classic favorite game, Snake, and giving it my own twist using HTML,
+                CSS, and JavaScript with the retro aesthetic</p>
+                <h5>Web Dev</h5> <h5>HTML</h5> <h5>CSS</h5> <h5>JavaScript</h5>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <div class="grid-item">
+
+      </div>
     </div>
     
-</body>
-
+    </script>
+  </body>
 </html>
