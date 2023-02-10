@@ -1,8 +1,8 @@
-// window.onscroll = function() {
-//     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-//         document.querySelector(".menu").style.backgroundColor = "rgba(51, 51, 51, 1)";
-//     } else {
-//         document.querySelector(".menu").style.backgroundColor = "rgba(51, 51, 51, 0)";
-//     }
-// };
-          
+function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }

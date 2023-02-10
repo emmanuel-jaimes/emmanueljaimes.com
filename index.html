@@ -9,20 +9,36 @@
         @import url('https://fonts.googleapis.com/css2?family=Cardo&family=Montserrat:wght@400;500;600;800&family=Source+Code+Pro:wght@300;400&display=swap');    
     </style>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="app.js"></script>
-    <style>
-      .grid-container {
-        display: grid;
-        grid-template-columns: 1fr 4fr 1fr;
-      }
-    </style>
   </head>
   <body>
     <header>
-      <div class="header-picture">
-        <img src="header-picture.jpg" alt="">
-      </div>
       <nav>
+        <!-- Top Navigation Menu -->
+        <div class="topnav">
+          <a href="#home" class="active"></a>
+          <div id="myLinks">
+            <a href="#about">ABOUT</a>
+            <a href="#skills">SKILLS</a>
+            <a href="#experience">EXPERIENCE</a>
+            <a href="#projects">PROJECTS</a>
+            <li><a href="#linkedin"></a> 
+              <img class="linkedInButton"
+                src="LI-In-Bug.png"
+                onclick="window.open('https://www.linkedin.com/in/jaimes-emmanuel', '_blank')">
+            </li>
+            <li><a href="#github"></a>
+              <img class="githubButton" 
+              src="GitHub-Mark-Light-64px.png" 
+              onclick="window.open('http://github.com/emmanuel-jaimes','_blank')">
+            </li>
+          </div>
+          <!-- "Hamburger menu" -->
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
       </nav>
     </header>
     <header>
@@ -134,9 +150,6 @@
             </li>
           </ul>
         </section>
-      </div>
-      <div class="grid-item">
-
       </div>
     </div>
     

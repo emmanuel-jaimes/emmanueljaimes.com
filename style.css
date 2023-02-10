@@ -14,6 +14,41 @@ body {
   padding: 50px;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+}
+
+/* ======================== MOBILE NAV ======================== */
+ .topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  color: black;
+}
 
 /* ======================== MENU ======================== */
   #menu {
@@ -26,6 +61,11 @@ body {
     font-weight: bold;
     letter-spacing: 1px;
   }
+  
+  .topnav {
+    display: none;
+  }
+
   #menu ul {
     list-style-type: none;
     margin: 0;
@@ -103,6 +143,7 @@ body {
   #skills li {
     padding-top: 20px;
     font-weight: 600;
+    margin-bottom: 5px;
   }
 
   /* ======================== EXPERIENCE ======================== */
@@ -142,4 +183,43 @@ body {
     background-color: #A2E3C4;
     color: #333;
     padding: 10px;
+  }
+
+  @media (max-width: 880px) {
+   #menu {
+    display: none;
+   } 
+   .topnav {
+    display: block;
+    position: fixed;
+    padding: 8px;
+    right: 0px;
+    top: 0px;
+    background-color: #333;
+    font-weight: bolder;
+    letter-spacing: 1px;
+   }
+   
+   #connections {
+    display: none;
+   }
+
+   .grid-container {
+      display: grid;
+      grid-template-columns: 5% 90% 5%;
+    }  
+
+    #experience li {
+      width: 100%;
+    }
+
+    #projects li {
+      width: 100%;
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
+
+    #projects-list li{
+      padding-top: 15px; 
+    }
   }
