@@ -2,8 +2,8 @@ html{
   font-family: 'Cardo', serif;
   font-family: 'Montserrat', sans-serif;
   font-family: 'Source Code Pro', monospace;
-  scroll-behavior: smooth;
   font-size: larger;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -11,7 +11,6 @@ body {
   color: #A2E3C4;
   font-family: Montserrat;
   scroll-behavior: smooth;
-  padding: 50px;
 }
 
 .grid-container {
@@ -51,145 +50,139 @@ body {
 }
 
 /* ======================== MENU ======================== */
-  #menu {
-    height: auto;
-    position: fixed;
-    top: center;
-    right: 0;
-    width: 200px;
-    color: #A2E3C4;
-    font-weight: bold;
-    letter-spacing: 1px;
-  }
-  
-  .topnav {
+#menu {
+  height: auto;
+  position: fixed;
+  top: center;
+  right: 0;
+  width: 200px;
+  color: #A2E3C4;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.topnav {
+  display: none;
+}
+#menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+#menu li {
+  display: block;
+  padding: 20px;
+  background-color: transparent;
+}
+#menu li:hover{
+  background-color: #7E8D85;
+} 
+
+#menu a {
+  color: #A2E3C4;
+  text-decoration: none;
+}
+
+/* ======================== CONNECTIONS ======================== */
+#connections {
+  position: fixed;
+}
+
+#connections li {
+  background-color: transparent;
+  padding: 20px;
+}
+#connections li:hover {
+  background-color: #A2E3C4;
+}
+
+.linkedInButton {
+  height: 64px;
+}
+
+.githubButton {
+  height: 64px;
+}
+.grid-item {
+  text-align: left;
+}
+li {
+  display: inline-block;
+  padding: 20px;
+  background-color: #333;
+  border-bottom: #F0F7F4;
+  border-radius: 2%;
+}
+
+/* ======================== ABOUT ======================== */
+#about h2 {
+  font-size: 5em;
+  letter-spacing: 2px;
+  padding-top: 10%;
+  font-stretch: extra-expanded;
+}
+#about p {
+  width: 80%;
+  font-weight: 500;
+  padding-left: 5px;
+  color: #F0F7F4;
+}
+#about  h3{
+  padding-left: 5px;
+  color: #A2E3C4;
+  letter-spacing: 1px;
+}
+
+/* ======================== SKILLS ======================== */
+#skills {
+  padding-top: 10%;
+}
+#skills li {
+  padding-top: 20px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+/* ======================== EXPERIENCE ======================== */
+#experience {
+  padding-top: 10%;
+}
+#experience h4{
+  font-family: 'Cardo';
+  letter-spacing: 1px;
+  font-size: large;
+}
+
+#experience li {
+  width: 40%;
+  background-color: #B3BFB8;
+  color: #1c221f;
+  font-weight: 600;
+}
+#experience p {
+  letter-spacing: 1px;
+}
+
+/* ======================== PROJECTS ======================== */
+#projects {
+  padding-top: 10%;
+}
+#projects li {
+  width: 40%;
+}
+#projects h5 {
+  width:fit-content;
+  display: inline-block;
+  background-color: #A2E3C4;
+  color: #333;
+  padding: 10px;
+}
+@media (max-width: 880px) {
+ 
+ #menu {
     display: none;
-  }
-
-  #menu ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  #menu li {
-    display: block;
-    padding: 20px;
-    background-color: transparent;
-  }
-  #menu li:hover{
-    background-color: #7E8D85;
-  } 
-  #menu a {
-    color: #A2E3C4;
-    text-decoration: none;
-  }
-
-  /* ======================== CONNECTIONS ======================== */
-  #connections {
-    position: fixed;
-  }
-  #connections li {
-    background-color: transparent;
-    padding: 20px;
-  }
-  #connections li:hover {
-    background-color: #A2E3C4;
-  }
-  .linkedInButton {
-    height: 64px;
-  }
-  .githubButton {
-    height: 64px;
-  }
-
-  .grid-item {
-    text-align: left;
-  }
-
-  li {
-    display: inline-block;
-    padding: 20px;
-    background-color: #333;
-    border-bottom: #F0F7F4;
-    border-radius: 2%;
-  }
-  
-
-  /* ======================== ABOUT ======================== */
-  #about h2 {
-    font-size: 5em;
-    letter-spacing: 2px;
-    padding-top: 10%;
-    font-stretch: extra-expanded;
-  }
-  #about p {
-    width: 80%;
-    font-weight: 500;
-    padding-left: 5px;
-    color: #F0F7F4;
-  }
-
-  #about  h3{
-    padding-left: 5px;
-    color: #A2E3C4;
-    letter-spacing: 1px;
-  }
-
-  /* ======================== SKILLS ======================== */
-  #skills {
-    padding-top: 10%;
-  }
-
-  #skills li {
-    padding-top: 20px;
-    font-weight: 600;
-    margin-bottom: 5px;
-  }
-
-  /* ======================== EXPERIENCE ======================== */
-  #experience {
-    padding-top: 10%;
-  }
-
-  #experience h4{
-    font-family: 'Cardo';
-    letter-spacing: 1px;
-    font-size: large;
-  }
-  
-  #experience li {
-    width: 40%;
-    background-color: #B3BFB8;
-    color: #1c221f;
-    font-weight: 600;
-  }
-
-  #experience p {
-    letter-spacing: 1px;
-  }
-
-  /* ======================== PROJECTS ======================== */
-  #projects {
-    padding-top: 10%;
-  }
-
-  #projects li {
-    width: 40%;
-  }
-
-  #projects h5 {
-    width:fit-content;
-    display: inline-block;
-    background-color: #A2E3C4;
-    color: #333;
-    padding: 10px;
-  }
-
-  @media (max-width: 880px) {
-   #menu {
-    display: none;
-   } 
-   .topnav {
+ } 
+ .topnav {
     display: block;
     position: fixed;
     padding: 8px;
@@ -198,28 +191,40 @@ body {
     background-color: #333;
     font-weight: bolder;
     letter-spacing: 1px;
-   }
-   
-   #connections {
+    background: rgb(28,34,31, 0.9);
+ }
+ 
+ .topnav li { 
+    background: rgb(28,34,31, 0.9);
+    background-color: transparent;
+ }
+ .topnav a:hover {
+    color: #A2E3C4;
+ }
+  
+ i.fa.fa-bars {
+    color: #A2E3C4;
+ }
+  
+ .topnav a.icon {
+    background: #1c221f;
+ }
+ #connections {
     display: none;
-   }
-
-   .grid-container {
-      display: grid;
-      grid-template-columns: 5% 90% 5%;
-    }  
-
-    #experience li {
-      width: 100%;
-    }
-
-    #projects li {
-      width: 100%;
-      padding-top: 25px;
-      padding-bottom: 25px;
-    }
-
-    #projects-list li{
-      padding-top: 15px; 
-    }
-  }
+ }
+ .grid-container {
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+ }  
+ #experience li {
+    width: 100%;
+ }
+ #projects li {
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+ }
+ #projects-list li{
+    padding-top: 15px; 
+ }
+}
