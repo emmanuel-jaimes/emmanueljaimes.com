@@ -6,9 +6,16 @@ html{
   scroll-behavior: smooth;
 }
 
+/* palette
+  #FBFCEE background
+  #080F0F text
+  #A4BAB7 highlight gray
+  #C8B492 highlight khaki 
+*/
+
 body {
-  background-color: #1c221f;
-  color: #A2E3C4;
+  background-color: #FBFCEE;
+  color: #080F0F;
   font-family: Montserrat;
   scroll-behavior: smooth;
 }
@@ -30,7 +37,7 @@ body {
 }
 
 .topnav a {
-  color: white;
+  color: #A4BAB7;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
@@ -56,7 +63,7 @@ body {
   top: center;
   right: 0;
   width: 200px;
-  color: #A2E3C4;
+  color: #C8B492;
   font-weight: bold;
   letter-spacing: 1px;
 }
@@ -75,11 +82,11 @@ body {
   background-color: transparent;
 }
 #menu li:hover{
-  background-color: #7E8D85;
+  background-color: #C8B492;
 } 
 
 #menu a {
-  color: #A2E3C4;
+  color: #080F0F;
   text-decoration: none;
 }
 
@@ -93,7 +100,7 @@ body {
   padding: 20px;
 }
 #connections li:hover {
-  background-color: #A2E3C4;
+  background-color: #C8B492;
 }
 
 .linkedInButton {
@@ -125,11 +132,11 @@ li {
   width: 80%;
   font-weight: 500;
   padding-left: 5px;
-  color: #F0F7F4;
+  color: #080F0F;
 }
 #about  h3{
   padding-left: 5px;
-  color: #A2E3C4;
+  color: #080F0F;
   letter-spacing: 1px;
 }
 
@@ -141,6 +148,7 @@ li {
   padding-top: 20px;
   font-weight: 600;
   margin-bottom: 5px;
+  background-color: #A4BAB7;
 }
 
 /* ======================== EXPERIENCE ======================== */
@@ -155,8 +163,8 @@ li {
 
 #experience li {
   width: 40%;
-  background-color: #B3BFB8;
-  color: #1c221f;
+  background-color: #C8B492;
+  color: #080F0F;
   font-weight: 600;
 }
 #experience p {
@@ -169,12 +177,13 @@ li {
 }
 #projects li {
   width: 40%;
+  background-color: #C8B492;
 }
 #projects h5 {
   width:fit-content;
   display: inline-block;
-  background-color: #A2E3C4;
-  color: #333;
+  background-color: #FBFCEE;
+  color: #080F0F;
   padding: 10px;
 }
 @media (max-width: 880px) {
