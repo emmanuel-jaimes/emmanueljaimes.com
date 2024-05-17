@@ -139,10 +139,16 @@ li {
   color: #080F0F;
   letter-spacing: 1px;
 }
+
+.typewriter{
+  /* padding: ;   */
+}
 .typewriter h2 {
+  max-width: fit-content;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid orange; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
+  /* white-space: nowrap;  */
+  display: inline-flexbox;
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .15em; /* Adjust as needed */
   animation: 
@@ -153,7 +159,7 @@ li {
 /* The typing effect */
 @keyframes typing {
   from { width: 0 }
-  to { width: 100% }
+  to { width: 75% }
 }
 
 /* The typewriter cursor effect */
