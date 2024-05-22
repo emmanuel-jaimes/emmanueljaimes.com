@@ -13,16 +13,26 @@ html{
   #C8B492 highlight khaki 
 */
 
-body {
-  background-color: #FBFCEE;
-  color: #080F0F;
-  font-family: Montserrat;
-  scroll-behavior: smooth;
+/* new palette
+  #000C1D black
+  #FDFDED white
+  #EF798A red 
+  #7FDEFF blue 
+  #8FE388 green
+*/
+
+header {
+  /* background-color: #00193D; */
+  padding: 5px 35px 5px 35px;
+  display: inline-flex;
+  float: right;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 4fr 1fr;
+body {
+  background-color: #000C1D;
+  color: #FDFDED;
+  font-family: Montserrat;
+  scroll-behavior: smooth;
 }
 
 /* ======================== MOBILE NAV ======================== */
@@ -57,208 +67,84 @@ body {
 }
 
 /* ======================== MENU ======================== */
-#menu {
-  height: auto;
-  position: fixed;
-  top: center;
-  right: 0;
-  width: 200px;
-  color: #C8B492;
-  font-weight: bold;
-  letter-spacing: 1px;
-}
 
 .topnav {
   display: none;
 }
-#menu ul {
+
+.nav-title {
+  position: absolute;
+  left: 0;
+  list-style-type: none;
+  text-decoration: none;
+  list-style: none;
+  color: #FDFDED;
+  font-size: x-large;
+}
+
+#nav {
+  text-align: right;
+}
+
+#nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  display: inline-block;
 }
-#menu li {
-  display: block;
-  padding: 20px;
-  background-color: transparent;
-}
-#menu li:hover{
-  background-color: #C8B492;
-} 
 
-#menu a {
-  color: #080F0F;
+#nav li {
+  display: inline;
+}
+
+#nav a {
+  display: inline-block;
+  padding: 10px 20px;
   text-decoration: none;
+  color: #FDFDED;
 }
 
-/* ======================== CONNECTIONS ======================== */
-#connections {
-  position: fixed;
+#nav a:hover {
+  color: #EF798A;
 }
 
-#connections li {
-  background-color: transparent;
-  padding: 20px;
-}
-#connections li:hover {
-  background-color: #C8B492;
+
+/* ======================== MAIN ======================== */
+
+.grid-container {
+  display: block;
+  padding: 150px 125px 150px 125px;
+  /* box-sizing: border-box; */
 }
 
-.linkedInButton {
-  height: 64px;
+#home h2{
+  color: #7FDEFF;
 }
 
-.githubButton {
-  height: 64px;
-}
-.grid-item {
-  text-align: left;
-}
-li {
-  display: inline-block;
-  padding: 20px;
-  background-color: #333;
-  border-bottom: #F0F7F4;
-  border-radius: 2%;
+.background-text {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  z-index: 0;
 }
 
-/* ======================== ABOUT ======================== */
-#about h2 {
-  font-size: 5em;
-  letter-spacing: 2px;
-  padding-top: 10%;
-  font-stretch: extra-expanded;
-}
-#about p {
-  width: 80%;
-  font-weight: 500;
-  padding-left: 5px;
-  color: #080F0F;
-}
-#about  h3{
-  padding-left: 5px;
-  color: #080F0F;
-  letter-spacing: 1px;
+#skills p {
+  display: block;
+  position: absolute;
+  /* top: 50%;
+  left: 50%; */
+  transform: translate(-50%, 125%);
+  font-size: 50px;
+  color: #8FE388;
+  animation: slide 5s linear infinite;
 }
 
-.typewriter{
-  /* padding: ;   */
-}
-.typewriter h2 {
-  max-width: fit-content;
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typwriter cursor */
-  /* white-space: nowrap;  */
-  display: inline-flexbox;
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
-  animation: 
-    typing 4s steps(40, end),
-    blink-caret .75s step-end infinite;
-}
-
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 75% }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange; }
-}
-
-/* ======================== SKILLS ======================== */
-#skills {
-  padding-top: 10%;
-}
-#skills li {
-  padding-top: 20px;
-  font-weight: 600;
-  margin-bottom: 5px;
-  background-color: #A4BAB7;
-}
-
-/* ======================== EXPERIENCE ======================== */
-#experience {
-  padding-top: 10%;
-}
-#experience h4{
-  font-family: 'Cardo';
-  letter-spacing: 1px;
-  font-size: large;
-}
-
-#experience li {
-  width: 40%;
-  background-color: #C8B492;
-  color: #080F0F;
-  font-weight: 600;
-}
-#experience p {
-  letter-spacing: 1px;
-}
-
-/* ======================== PROJECTS ======================== */
-#projects {
-  padding-top: 10%;
-}
-#projects li {
-  width: 40%;
-  background-color: #C8B492;
-}
-#projects h5 {
-  width:fit-content;
-  display: inline-block;
-  background-color: #FBFCEE;
-  color: #080F0F;
-  padding: 10px;
-}
-@media (max-width: 880px) {
- 
- #menu {
-    display: none;
- } 
- .topnav {
-    display: block;
-    position: fixed;
-    padding: 8px;
-    right: 0px;
-    top: 0px;
-    background-color: #333;
-    font-weight: bolder;
-    letter-spacing: 1px;
-    background: rgb(28,34,31, 0.9);
- }
- 
- .topnav li { 
-    background: rgb(28,34,31, 0.9);
-    background-color: transparent;
- }
- .topnav a:hover {
-    color: #A2E3C4;
- }
-  
- i.fa.fa-bars {
-    color: #A2E3C4;
- }
-  
- .topnav a.icon {
-    background: #1c221f;
- }
- #connections {
-    display: none;
- }
- .grid-container {
-    display: grid;
-    grid-template-columns: 5% 90% 5%;
- }  
- #experience li {
-    width: 100%;
-    margin-top: 20px;
- }
- #projects li {
-    width: 100%;
-    margin-top: 20px;
- }
+@keyframes slide {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
 }
