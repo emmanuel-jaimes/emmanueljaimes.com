@@ -23,7 +23,7 @@ html{
 
 header {
   /* background-color: #00193D; */
-  padding: 5px 35px 5px 35px;
+  padding: 5px 0px 5px 35px;
   display: inline-flex;
   float: right;
 }
@@ -36,7 +36,8 @@ body {
 }
 
 /* ======================== MOBILE NAV ======================== */
- .topnav {
+
+.topnav {
   overflow: hidden;
   background-color: #333;
   position: relative;
@@ -47,7 +48,7 @@ body {
 }
 
 .topnav a {
-  color: #A4BAB7;
+  color: white;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
@@ -65,6 +66,23 @@ body {
 .topnav a:hover {
   color: black;
 }
+
+@media (max-width: 800px) {
+  #nav {
+   display: none;
+  } 
+  .topnav {
+   display: block;
+   position: fixed;
+   padding: 8px;
+   right: 0px;
+   top: 0px;
+   background-color: white;
+   font-weight: bolder;
+   letter-spacing: 1px;
+  }
+ }
+
 
 /* ======================== MENU ======================== */
 
@@ -99,14 +117,19 @@ body {
 
 #nav a {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 10px 25px;
   text-decoration: none;
   color: #FDFDED;
 }
 
-#nav a:hover {
+#nav-logo:hover {
+  color: #8FE388;
+}
+
+#nav-link:hover {
   color: #EF798A;
 }
+
 
 
 /* ======================== MAIN ======================== */
@@ -114,7 +137,7 @@ body {
 .grid-container {
   display: block;
   padding: 150px 125px 150px 125px;
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
 }
 
 #home h2{
@@ -147,4 +170,27 @@ body {
   100% {
     left: 100%;
   }
+}
+
+/* ======================== CONNECTIONS ======================== */
+
+.connections {
+  display: inline-block;
+}
+
+.connections ul {
+  display: inline-flex;
+  margin: 0;
+  max-width: 100%;
+  padding-left: 0;
+  justify-content: space-between;
+}
+
+.connections ul li {
+  list-style-type: none;
+  margin: 10px;
+}
+
+.connections img {
+  max-width: 50px;
 }
