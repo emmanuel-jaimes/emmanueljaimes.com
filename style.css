@@ -23,9 +23,10 @@ html{
 
 header {
   /* background-color: #00193D; */
-  padding: 5px 0px 5px 35px;
+  /* padding: 10px 0px 5px 35px; */
   display: inline-flex;
   float: right;
+  padding-top: 15px;
 }
 
 body {
@@ -39,7 +40,7 @@ body {
 
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  /* background-color: ; */
   position: relative;
 }
 
@@ -56,7 +57,7 @@ body {
 }
 
 .topnav a.icon {
-  background: black;
+  background: #000C1D;
   display: block;
   position: absolute;
   right: 0;
@@ -64,7 +65,7 @@ body {
 }
 
 .topnav a:hover {
-  color: black;
+  color: #8FE388;
 }
 
 @media (max-width: 800px) {
@@ -77,17 +78,27 @@ body {
    padding: 8px;
    right: 0px;
    top: 0px;
-   background-color: white;
+   background-color: transparent;
    font-weight: bolder;
    letter-spacing: 1px;
+  }
+
+  .mobile-container {
+    display: block;
   }
  }
 
 
 /* ======================== MENU ======================== */
 
-.topnav {
-  display: none;
+@media (min-width: 800px) {
+  .mobile-container {
+    display: none;
+  }
+
+  .topnav {
+    display: none;
+  }
 }
 
 .nav-title {
