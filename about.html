@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About</title>
+    <style>    
+        @import url('https://fonts.googleapis.com/css2?family=Cardo&family=Montserrat:wght@400;500;600;800&family=Source+Code+Pro:wght@300;400&display=swap');    
+    </style>
+    <link rel="shortcut icon" type="image/x-icon" href="portfolio_logo.png" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+    <header>
+        <nav>
+          <!-- Top Navigation Menu -->
+          <div class="mobile-container"> 
+            <div class="topnav">
+              <a href="#home" class="active"></a>
+              <div id="myLinks">
+                <a href="about.html">about</a>
+                <a href="#experience">experience</a>
+                <a href="#projects">projects</a>
+              </div>
+              <!-- "Hamburger menu" -->
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+            </div>
+          </div>
+        </nav>
+        <script>
+          function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+              x.style.display = "none";
+            } else {
+              x.style.display = "block";
+            }
+          }
+          </script>
+      </header>
+    
+      <header>
+        
+        <div id="nav">
+          <ul>
+            <li><a class="nav-title" id="nav-logo" href="index.html">emmanuel jaimes</a></li>
+            <li><a class="nav-link" id="nav-link" href="#">about</a></li>
+            <li><a class="nav-link" id="nav-link" href="index.html#experience">experience</a></li>
+            <li><a class="nav-link" id="nav-link" href="index.html#projects">projects</a></li>
+          </ul>
+        </div>
+      </header>
+
+      <div class="grid-container">
+        <div class="img-container">
+            <img src="imgs/portrait-grad.jpg" alt="portrait">
+        </div>
+        <div class="about">
+            <!-- <p id="title">About</p> -->
+            <p id="about-bio">
+                Born and raised in Dallas, Texas and recently received my Bachelors in 
+                Computer Science and Computer Engineering from the University of Iowa. 
+                A Texas native adopted by the Midwest by way of Iowa, I have navigated 
+                the best of both worlds, the unbearable Texas Sun and the bone-chilling 
+                windy winters in Iowa. 
+            </p>
+        </div>
+      </div>
+
+  </body>
+
+</html>

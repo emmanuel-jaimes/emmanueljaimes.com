@@ -294,3 +294,33 @@ body {
   background-color: #071a34;
   border: none;
 }
+
+/* ======================== about ======================== */
+
+.img-container {
+  display: grid;
+  padding-top: 100px;
+  padding-bottom: 20px;
+}
+
+.img-container img {
+  height: 500px;
+  justify-self: center;
+  /* width: 70%; */
+}
+
+#title {
+  font-size: xx-large;
+}
+
+.about {
+  display: grid;
+}
+
+#about-bio {
+  justify-self: center;
+  width: 50%;
+  line-height: 30px;
+  text-align: justify;
+  word-spacing: 5px;
+}
