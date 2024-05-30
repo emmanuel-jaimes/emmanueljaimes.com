@@ -27,6 +27,7 @@ header {
   display: inline-flex;
   float: right;
   padding-top: 15px;
+  /* width: 100%; */
 }
 
 body {
@@ -42,6 +43,7 @@ body {
   overflow: hidden;
   /* background-color: ; */
   position: relative;
+  z-index: 1;
 }
 
 .topnav #myLinks {
@@ -54,6 +56,7 @@ body {
   text-decoration: none;
   font-size: 17px;
   display: block;
+  font-weight: normal;
 }
 
 .topnav a.icon {
@@ -68,10 +71,18 @@ body {
   color: #8FE388;
 }
 
+.top-title {
+  float: left;
+  position: relative;
+  color: #FDFDED;
+  text-decoration: none;
+}
+
 @media (max-width: 800px) {
   #nav {
    display: none;
   } 
+
   .topnav {
    display: block;
    position: fixed;
@@ -79,6 +90,7 @@ body {
    right: 0px;
    top: 0px;
    background-color: #000C1D;
+   border-radius: 15px;
    font-weight: bolder;
    letter-spacing: 1px;
   }
@@ -213,6 +225,7 @@ body {
   font-weight: 600;
   font-family: 'Source Code Pro', monospace;
   background-color: black;
+  /* max-width: 70%; */
 }
 
 .skills h3 {
@@ -297,16 +310,28 @@ body {
 
 /* ======================== about ======================== */
 
+@media (max-width: 500px) {
+  .img-container img {
+    max-width: 200px;
+  }
+
+  .grid-container {
+    padding: 50px 50px 50px 50px;
+  }
+}
+
 .img-container {
   display: grid;
-  padding-top: 100px;
+  padding-top: 25px;
   padding-bottom: 20px;
+  z-index: 0;
 }
 
 .img-container img {
-  height: 500px;
+  max-height: 500px;
   justify-self: center;
-  /* width: 70%; */
+  border-radius: 15px;
+  opacity: 85%;
 }
 
 #title {
@@ -317,10 +342,48 @@ body {
   display: grid;
 }
 
+.about h2 {
+  font-size: xx-large;
+  font-weight: normal;
+}
+
 #about-bio {
   justify-self: center;
-  width: 50%;
+  width: 100%;
+  max-width: 600px;
   line-height: 30px;
   text-align: justify;
   word-spacing: 5px;
+}
+
+#about-bio mark {
+  background-color: #7FDEFF;
+  border-radius: 2px;
+  padding: 1px;
+}
+
+/* ======================== resume ======================== */
+
+.resume-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "resume resume" "resume resume";
+  padding-top: 25px;
+  padding-bottom: 20px;
+  z-index: 0;
+  height: 100vh;
+}
+
+.resume-container iframe {
+  grid-area: resume;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+@media (max-width: 600px) {
+  .resume-container iframe{
+    height: 500px;
+  }
 }
