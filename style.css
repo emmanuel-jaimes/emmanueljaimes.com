@@ -7,13 +7,6 @@ html{
 }
 
 /* palette
-  #FBFCEE background
-  #080F0F text
-  #A4BAB7 highlight gray
-  #C8B492 highlight khaki 
-*/
-
-/* new palette
   #000C1D black
   #FDFDED white
   #EF798A red 
@@ -22,12 +15,10 @@ html{
 */
 
 header {
-  /* background-color: #00193D; */
   /* padding: 10px 0px 5px 35px; */
   display: inline-flex;
   float: right;
   padding-top: 15px;
-  /* width: 100%; */
 }
 
 body {
@@ -41,7 +32,6 @@ body {
 
 .topnav {
   overflow: hidden;
-  /* background-color: ; */
   position: relative;
   z-index: 1;
 }
@@ -165,8 +155,6 @@ body {
   color: #EF798A;
 }
 
-
-
 /* ======================== MAIN ======================== */
 
 #home {
@@ -176,15 +164,6 @@ body {
 #home h2{
   color: #7FDEFF;
 }
-
-/* .background-text {
-  position: relative;
-  height: 100vh;
-  width: 100vw;
-  overflow: hidden;
-  z-index: 0;
-} */
-
 
 /* ======================== CONNECTIONS ======================== */
 
@@ -225,7 +204,6 @@ body {
   font-weight: 600;
   font-family: 'Source Code Pro', monospace;
   background-color: black;
-  /* max-width: 70%; */
 }
 
 .skills h3 {
@@ -286,19 +264,13 @@ body {
   font-weight: normal;
 }
 
-/* .experience h3 {
-  font-weight: normal;
-} */
-
 .experience dialog { 
  background-color: #000C1D; 
- /* float: left; */
  position: inherit;
  width: 90%;
  color: #FDFDED;
  border: 1px solid #242424;
  margin: 10px auto;
- text-align: justify;
  white-space: wrap;
  word-spacing: 5px;
 }
@@ -357,7 +329,6 @@ body {
   width: 100%;
   max-width: 600px;
   line-height: 30px;
-  text-align: justify;
   word-spacing: 5px;
 }
 
