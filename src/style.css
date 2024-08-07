@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html{
   font-family: 'Cardo', serif;
   font-family: 'Montserrat', sans-serif;
@@ -13,6 +17,19 @@ html{
   #7FDEFF blue 
   #8FE388 green
 */
+
+#welcome {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+#welcome div {
+  margin-left: 20px;
+}
+
 
 header {
   /* padding: 10px 0px 5px 35px; */
@@ -163,6 +180,10 @@ body {
 
 #home h2{
   color: #7FDEFF;
+}
+
+#home h1{
+  font-weight: normal;
 }
 
 /* ======================== CONNECTIONS ======================== */

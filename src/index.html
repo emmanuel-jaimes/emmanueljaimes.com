@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emmanuel Jaimes</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+</head>
+
+<body class="bg-black">
+
+  <style>
+    p {
+      font-size: large;
+    }
+  </style>
+
+  <div class="container mx-auto mt-16 p-4 pt-6 md:p-6 lg:p-6 xl:p-6 2xl:p-6">
+    <div class="grid h-screen text-white grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 gap-4">
+      <!-- column 1 -->
+      <div class="mb-4">
+        <h1 class="text-3xl">Emmanuel Jaimes</h1>
+        <p class="pb-12">Software Engineer / Developer</p>
+
+        <!-- <div class="flex border-white border-1 p-2 gap-7 justify-start rounded-xl h-10">
+          <button class="flex hover:text-red-300" id="about-btn">About</button>
+          <button class="flex hover:text-green-300" id="experiennce-btn">Experience</button>
+          <button class="flex hover:text-blue-300" id="projects-btn">Projects</button>
+        </div> -->
+
+        <div class="inline-flex border-white border-1 gap-8 p-2 rounded-xl h-16 fixed bottom-16" id="connections">
+          <a href="" class="flex">
+            <img src="/imgs/Linkedin.svg" alt="Visit LinkedIn" class="hover:bg-blue-300 p-2 rounded-xl"></a>
+          <a href="" class="flex">
+            <img src="/imgs/Github.svg" alt="Visit GitHub" class="hover:bg-purple-300 p-2 rounded-xl"></a>
+          <a href="mailto:emnl.jms@gmail.com" class="flex"> 
+            <img src="/imgs/Mail.svg" alt="Send Email" class="hover:bg-green-300 p-2 rounded-xl"></a>
+          <a href="/info/Resume_JaimesCF.pdf" download="resume.pdf" class="flex">
+            <img src="/imgs/File_text.svg" alt="Download Resume" class="hover:bg-yellow-300 p-2 rounded-xl"></a>
+        </div>
+      </div>
+      <!-- column 2 -->
+      <div class="mb-4 p-8" id="about_tab">
+        <div class="grid gap-9">
+          <p class="text-2xl">About</p>
+          <p>
+            Born and raised in Dallas, Texas. A Texas native adopted by the Midwest by way of Iowa, 
+            I have learned to navigate the best of both worlds, the unbearable Texas Sun and the 
+            bone-chilling windy winters in Iowa. 
+          </p>
+          <p>
+            Recently received my B.S.E in Computer Science and Computer Engineering from the University 
+            of Iowa. Passionate about everything computers, I pride myself on the technical skills and 
+            experiences I have gained during my time at Iowa. Embedded Systems is an honorable course 
+            that greatly challenged my skills and reinforced my interests and passions by bridging concepts 
+            between computer science and computer engineering. With this, I'm always excited to demonstate 
+            my skills and find creative ways to contribute to environments where I can foster growth for 
+            not only myself but my peers as well. 
+          </p>
+        </div>
+      </div>
+
+      <div class="mb-4 col-start-2 p-8" id="experience_tab">
+        <div class="grid gap-9"> 
+          <p class="text-2xl">Experience</p>
+          <div>
+            <div class="inline-flex gap-4">
+              <p class="text-xl font-bold">Product Engineer</p> <p class="text-xl font-light">John Deere</p>
+            </div>
+            <p class="py-2">
+              Product Engineer
+              Interned at John Deere Dubuque Works where I demonstrated my software development skills and was able to contribute to projects of great value for their vehicle lines.
+              Gained valuable lessons and insight about the industry process, product development, product verification and testing, as well as Agile project methodoligies while early in my collegiate career.
+            </p>
+            <div class="flex flex-wrap gap-2 pt-2">
+              <span class="bg-green-700 p-2 rounded-lg">Embedded Systems</span> 
+              <span class="bg-green-700 p-2 rounded-lg">RestAPI</span> 
+              <span class="bg-green-700 p-2 rounded-lg">Computer Engineering</span> 
+              <span class="bg-green-700 p-2 rounded-lg">Product Development</span> 
+              <span class="bg-green-700 p-2 rounded-lg">Product Testing</span>
+            </div>
+          </div>
+          <div>
+            <div class="inline-flex gap-4">
+              <p class="text-xl font-bold">IT Support Specialist</p> <p class="text-xl font-light">University of Iowa</p>
+            </div>
+            <p class="py-2">
+            Contributed as a student support specialist for the College of Public Health for the University of Iowa where I quickly integrated myself into a trusting network of faculty, researchers, and students.
+            I was able to provide technical support for the college's IT infrastructure and services, as well as assist with the development of new projects and initiatives.
+            </p>
+            <div class="flex flex-wrap gap-2 pt-2">
+              <span class="bg-yellow-500 p-2 rounded-lg">Network Troubleshooting</span> 
+              <span class="bg-yellow-500 p-2 rounded-lg">System Deployments</span> 
+              <span class="bg-yellow-500 p-2 rounded-lg">Database Management</span> 
+              <span class="bg-yellow-500 p-2 rounded-lg">Technical Support</span> 
+              <span class="bg-yellow-500 p-2 rounded-lg">Hardware Imaging</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mb-4 col-start-2 p-8" id="projects_tab">
+        <div class="grid gap-4">
+          <p class="text-2xl">Projects</p>
+          <div class="inline-flex gap-4 pt-4">
+            <p class="text-xl font-bold">Digital Smart Thermometer</p> <p class="text-xl font-light">Project Lead</p>
+          </div>
+          <p class="py-2">
+            Designed and programmed an Arduino Uno with ATmega328P, LCD 1602 Module, HW-131 Power Supply
+            Module, and a temperature sensor to meet design specifications.
+            Developed a GUI to output readings retrieved from the temperature sensor into a time-summarized chart.
+            Designed and developed a web app to display and demonstrate live temperature readings along with a live
+            weather forecast in the given area using the OpenWeather API.
+            Collaborated with team members frequently to effectively complete project tasks.
+          </p>
+          <div class="flex flex-wrap gap-2 pt-2">
+            <span class="bg-blue-700 p-2 rounded-lg">Embedded Programming</span> 
+            <span class="bg-blue-700 p-2 rounded-lg">API Integration</span> 
+            <span class="bg-blue-700 p-2 rounded-lg">Circuit Design</span> 
+            <span class="bg-blue-700 p-2 rounded-lg">Product Design</span> 
+            <span class="bg-blue-700 p-2 rounded-lg">Smart System Development</span>
+          </div>  
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
