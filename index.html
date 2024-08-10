@@ -13,14 +13,17 @@
     p {
       font-size: large;
     }
+    html {
+      line-height: 30px;
+    }
   </style>
 
-  <div class="container mx-auto mt-16 p-4 pt-6 md:p-6 lg:p-6 xl:p-6 2xl:p-6">
-    <div class="grid h-screen text-white grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 gap-4">
+  <div class="container mx-auto mt-16 p-4 sm:p-8 md:p-6 lg:p-6">
+    <div class="grid h-screen text-white grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-4 sm:gap-2 md:gap-4">
       <!-- column 1 -->
       <div class="mb-4">
-        <div class="fixed">
-          <h1 class="text-3xl ">Emmanuel Jaimes</h1>
+        <div class="md:fixed p-4">
+          <h1 class="text-3xl">Emmanuel Jaimes</h1>
           <p class="pb-12">Software Engineer / Developer</p>
         </div>
 
@@ -30,7 +33,7 @@
           <button class="flex hover:text-blue-300" id="projects-btn">Projects</button>
         </div> -->
 
-        <div class="inline-flex border-white border-1 gap-8 p-2 rounded-xl h-16 fixed bottom-16" id="connections">
+        <div class="inline-flex border-white border-1 gap-8 p-2 rounded-xl h-16 md:fixed md:bottom-16" id="connections">
           <a href="" class="flex">
             <img src="/imgs/Linkedin.svg" alt="Visit LinkedIn" class="hover:bg-blue-300 p-2 rounded-xl"></a>
           <a href="" class="flex">
@@ -62,7 +65,7 @@
         </div>
       </div>
 
-      <div class="mb-4 col-start-2 p-8" id="experience_tab">
+      <div class="mb-4 md:col-start-2 p-8" id="experience_tab">
         <div class="grid gap-9"> 
           <p class="text-2xl">Experience</p>
           <div>
@@ -107,7 +110,7 @@
         </div>
       </div>
 
-      <div class="mb-4 col-start-2 p-8" id="projects_tab">
+      <div class="mb-4 md:col-start-2 p-8" id="projects_tab">
         <div class="grid gap-9">
           <p class="text-2xl">Projects</p>
           <div>
