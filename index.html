@@ -7,139 +7,32 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
 </head>
 
-<body class="bg-black">
-
-  <style>
-    p {
-      font-size: large;
-    }
-    html {
-      line-height: 30px;
-    }
-  </style>
-
-  <div class="container mx-auto mt-16 p-4 sm:p-8 md:p-6 lg:p-6">
-    <div class="grid h-screen text-white grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-4 sm:gap-2 md:gap-4">
-      <!-- column 1 -->
-      <div class="mb-4">
-        <div class="md:fixed p-4">
-          <h1 class="text-3xl">Emmanuel Jaimes</h1>
-          <p class="pb-12">Software Engineer / Developer</p>
-        </div>
-
-        <!-- <div class="flex border-white border-1 p-2 gap-7 justify-start rounded-xl h-10">
-          <button class="flex hover:text-red-300" id="about-btn">About</button>
-          <button class="flex hover:text-green-300" id="experiennce-btn">Experience</button>
-          <button class="flex hover:text-blue-300" id="projects-btn">Projects</button>
-        </div> -->
-
-        <div class="inline-flex border-white border-1 gap-8 p-2 rounded-xl h-16 md:fixed md:bottom-16" id="connections">
-          <a href="https://www.linkedin.com/in/jaimes-emmanuel" target="_blank" class="flex">
-            <img src="/imgs/Linkedin.svg" alt="Visit LinkedIn" class="hover:bg-blue-300 p-2 rounded-xl">
-          </a>
-          <a href="https://github.com/emmanuel-jaimes" target="_blank" class="flex">
-            <img src="/imgs/Github.svg" alt="Visit GitHub" class="hover:bg-purple-300 p-2 rounded-xl">
-          </a>
-          <a href="mailto:emnl.jms@gmail.com" class="flex"> 
-            <img src="/imgs/Mail.svg" alt="Send Email" class="hover:bg-green-300 p-2 rounded-xl"></a>
-          <a href="/info/emmanuelJaimes_Resume.pdf" download="resume.pdf" class="flex">
-            <img src="/imgs/File_text.svg" alt="Download Resume" class="hover:bg-yellow-300 p-2 rounded-xl"></a>
-        </div>
-      </div>
-      <!-- column 2 -->
-      <div class="mb-4 p-8" id="about_tab">
-        <div class="grid gap-9">
-          <p class="text-2xl">About</p>
-          <p>
-            Born and raised in Dallas, Texas. A Texas native adopted by the Midwest by way of Iowa, 
-            I have learned to navigate the best of both worlds, the unbearable Texas Sun and the 
-            bone-chilling windy winters in Iowa. 
-          </p>
-          <p>
-            Recently received my B.S.E in Computer Science and Computer Engineering from the University 
-            of Iowa. Passionate about everything computers, I pride myself on the technical skills and 
-            experiences I have gained during my time at Iowa. Embedded Systems is an honorable course 
-            that greatly challenged my skills and reinforced my interests and passions by bridging concepts 
-            between computer science and computer engineering. With this, I'm always excited to demonstate 
-            my skills and find creative ways to contribute to environments where I can foster growth for 
-            not only myself but my peers as well. 
-          </p>
-        </div>
+<body class="bg-black text-white font-sans">
+  <div class="flex items-center justify-center min-h-screen px-4">
+    <div class="text-center">
+      <!-- header -->
+      <div class="mb-10">
+        <h1 class="text-3xl font-semibold">Emmanuel Jaimes</h1>
+        <p class="text-lg mt-2">Software Engineer / Developer</p>
       </div>
 
-      <div class="mb-4 md:col-start-2 p-8" id="experience_tab">
-        <div class="grid gap-9"> 
-          <p class="text-2xl">Experience</p>
-          <div>
-            <div class="inline-flex">
-              <p class="text-xl font-bold">Product Engineer</p> 
-            </div>
-            <div class="inline-flex">
-              <span class="text-xl bg-green-700 rounded-lg p-2 font-light">John Deere</span> 
-            </div>
-            <p class="py-2">
-              Interned at Dubuque Works where I demonstrated my engineering skills and was able to gain valuable insight about the industry process and Agile Development Life Cycle.
-              Capitalized on my opportunity to contribute to their construction vehicle lineup through embedded software development, product develpment, and product testing.
-            </p>
-            <div class="flex flex-wrap gap-2 pt-2 text-sm">
-              <span class="border-green-700 border-2 p-2 rounded-lg">Embedded Systems</span> 
-              <span class="border-green-700 border-2 p-2 rounded-lg">RestAPI</span> 
-              <span class="border-green-700 border-2 p-2 rounded-lg">Computer Engineering</span> 
-              <span class="border-green-700 border-2 p-2 rounded-lg">Product Development</span> 
-              <span class="border-green-700 border-2 p-2 rounded-lg">Product Testing</span>
-            </div>
-          </div>
-          <div>
-            <div class="inline-flex">
-              <p class="text-xl font-bold">IT Support Specialist</p> 
-            </div>
-            <div class="inline-flex">
-              <p class="text-xl font-light bg-yellow-500 p-2 rounded-lg">University of Iowa</p>
-            </div>
-            <p class="py-2">
-            Contributed as a student support specialist for the College of Public Health at the University of Iowa where I quickly integrated myself into a trusting network of faculty, researchers, and students.
-            Honored to be able to provide technical support for the college's IT infrastructure and services, as well as assist with the development of new projects and initiatives through the deployment and maintainent of IT Devices.
-            </p>
-            <div class="flex flex-wrap gap-2 pt-2 text-sm">
-              <span class="border-yellow-500 border-2 p-2 rounded-lg">Network Troubleshooting</span>
-              <span class="border-yellow-500 border-2 p-2 rounded-lg">System Deployments</span>
-              <span class="border-yellow-500 border-2 p-2 rounded-lg">Database Management</span>
-              <span class="border-yellow-500 border-2 p-2 rounded-lg">Technical Support</span>
-              <span class="border-yellow-500 border-2 p-2 rounded-lg">Hardware Imaging</span>
-            </div>
-          </div>
-        </div>
+      <!-- connections -->
+      <div class="inline-flex gap-6 p-3 rounded-xl">
+        <a href="https://www.linkedin.com/in/jaimes-emmanuel" target="_blank">
+          <img src="/imgs/Linkedin.svg" alt="LinkedIn" class="hover:bg-blue-300 p-2 rounded-xl">
+        </a>
+        <a href="https://github.com/emmanuel-jaimes" target="_blank">
+          <img src="/imgs/Github.svg" alt="GitHub" class="hover:bg-purple-300 p-2 rounded-xl">
+        </a>
+        <a href="mailto:emnl.jms@gmail.com">
+          <img src="/imgs/Mail.svg" alt="Email" class="hover:bg-green-300 p-2 rounded-xl">
+        </a>
+        <a href="/info/emmanuelJaimes_Resume.pdf" download="resume.pdf">
+          <img src="/imgs/File_text.svg" alt="Resume" class="hover:bg-yellow-300 p-2 rounded-xl">
+        </a>
       </div>
-
-      <div class="mb-4 md:col-start-2 p-8" id="projects_tab">
-        <div class="grid gap-9">
-          <p class="text-2xl">Projects</p>
-          <div>
-            <div class="inline-flex">
-              <p class="text-xl font-bold">Digital Smart Thermometer</p> 
-            </div>
-            <div class="inline-flex">
-              <p class="text-xl font-light bg-blue-700 p-2 rounded-lg">Project Lead</p>
-            </div>
-            <p class="py-2">
-              Designed and programmed an Arduino Uno with ATmega328P, LCD 1602 Module, HW-131 Power Supply
-              Module, and a temperature sensor to meet design specifications.
-              Developed a GUI to output readings retrieved from the temperature sensor into a time-summarized chart.
-              Designed and developed a web app to display and demonstrate live temperature readings along with a live
-              weather forecast in the given area using the OpenWeather API.
-            </p>
-            <div class="flex flex-wrap gap-2 pt-2 text-sm">
-              <span class="border-blue-700 border-2 p-2 rounded-lg">Embedded Programming</span> 
-              <span class="border-blue-700 border-2 p-2 rounded-lg">API Integration</span> 
-              <span class="border-blue-700 border-2 p-2 rounded-lg">Circuit Design</span> 
-              <span class="border-blue-700 border-2 p-2 rounded-lg">Product Design</span> 
-              <span class="border-blue-700 border-2 p-2 rounded-lg">Smart System Development</span>
-            </div>  
-          </div>
-        </div>
     </div>
   </div>
-
 </body>
 
 </html>
