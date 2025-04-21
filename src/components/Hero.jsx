@@ -1,6 +1,7 @@
 import React from "react";
 import SocialIcon from "./SocialIcon";
 import Typewriter from "./Typewriter";
+import RecentlyPlayed from "./RecentlyPlayed";
 
 export default function Hero() {
   return (
@@ -8,7 +9,8 @@ export default function Hero() {
       <div className="flex justify-between items-center">
         <div className="flex flex-col">
         <h1 className="text-4xl font-bold mb-3">Emmanuel Jaimes</h1>
-          <Typewriter size="text-3xl" words={['Software Engineer', 'Dallas Native', 'Music Enthusiast', 'UIowa Grad']}/>
+          <Typewriter size="text-3xl" 
+          words={['Software Engineer', 'University of Iowa Graduate', 'Dallas Native', 'Craft Bartender','Music Enthusiast', 'Intramural Futsal Champion']}/>
         </div>
         
 
@@ -40,6 +42,7 @@ export default function Hero() {
           />
         </div>
       </div>
+      
     </div>
   );
 }
