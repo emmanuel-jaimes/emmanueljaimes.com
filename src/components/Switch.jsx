@@ -35,7 +35,7 @@ const sampleSongs = [
   ];
 
 const sections = {
-  Welcome: (
+  Howdy: (
     <>
         <p>
             Glad you're here. <br />Check out what I have been listening to.
@@ -52,7 +52,7 @@ const sections = {
 };
 
 function Switch() {
-  const [activeTab, setActiveTab] = useState('Welcome'); //landing
+  const [activeTab, setActiveTab] = useState('Howdy'); //landing
 
   return (
     <div className="min-h-screen overflow flex flex-col items-center pt-8 transition-all duration-500">
