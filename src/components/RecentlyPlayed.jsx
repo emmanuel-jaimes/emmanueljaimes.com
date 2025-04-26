@@ -2,7 +2,7 @@ import React from 'react'
 
 function RecentlyPlayed({ songs }) {
   return (
-    <div className="overflow-x-auto py-4 mt-16">
+    <div className="overflow-x-auto py-4 mt-6">
       <div className="flex gap-8">
         {songs.map((song, index) => (
           <div

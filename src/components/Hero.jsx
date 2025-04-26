@@ -1,7 +1,6 @@
 import React from "react";
 import SocialIcon from "./SocialIcon";
 import Typewriter from "./Typewriter";
-import RecentlyPlayed from "./RecentlyPlayed";
 
 export default function Hero() {
   return (

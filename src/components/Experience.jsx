@@ -1,4 +1,3 @@
-import { title } from 'framer-motion/client';
 import React from 'react';
 
 const experiences = [
@@ -35,7 +34,7 @@ const experiences = [
     company: "Various Locations",
     location: "Dallas, TX",
     title: "Craft Cocktail Bartender",
-    logo: null,
+    logo: "/imgs/martini-glass.png",
 },
 ];
 
@@ -55,7 +54,7 @@ function Experience() {
           >
             {/* left uiowa card */}
             {isLeft ? (
-              <div className="bg-gray-50 text-black rounded-xl shadow-md p-4 w-full justify-self-end z-10">
+              <div className="bg-gray-50 text-black rounded-xl shadow-md p-5 w-full justify-self-end z-10">
                 <div className="flex items-center gap-2 mb-2">
                   {exp.logo && (
                     <img src={exp.logo} alt="" className="w-14 h-14 object-contain rounded" />
@@ -66,7 +65,7 @@ function Experience() {
                 <p className="text-lg font-bold">{exp.title}</p>
               </div>
             ) : (
-              <div className="text-sm text-gray-50 pt-7 justify-self-end z-10">{exp.year}</div>
+              <div className="text-xl text-gray-300 italic pt-7 justify-self-end z-10">{exp.year}</div>
             )}
 
             {/* timeline marker */}
@@ -76,7 +75,7 @@ function Experience() {
 
             {/* right jobx */}
             {!isLeft ? (
-              <div className="bg-gray-50 text-black rounded-xl shadow-md p-4 w-full justify-self-start z-10">
+              <div className="bg-gray-50 text-black rounded-xl shadow-md p-5 w-full justify-self-start z-10">
                 <div className="flex items-center gap-2 mb-2">
                   {exp.logo && (
                     <img src={exp.logo} alt="" className="w-14 h-14 object-contain rounded" />
@@ -87,7 +86,7 @@ function Experience() {
                 <p className="text-lg font-bold">{exp.title}</p>
               </div>
             ) : (
-              <div className="text-sm text-gray-50 pt-7 justify-self-start z-10">{exp.year}</div>
+              <div className="text-xl italic text-gray-300 pt-7 justify-self-start z-10">{exp.year}</div>
             )}
           </div>
         );
