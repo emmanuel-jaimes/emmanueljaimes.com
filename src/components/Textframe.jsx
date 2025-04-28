@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Textframe({ imgsrc, title, description, timeframe, link, size, description2 }) {
+function Textframe({ imgsrc, title, description, timeframe, link, size='w-9', description2 }) {
   const colors = [
     'red', 'blue', 'green', 'yellow', 'purple'
   ];
@@ -10,7 +10,7 @@ function Textframe({ imgsrc, title, description, timeframe, link, size, descript
       <div className="bg-gray-200 rounded-2xl p-4">
         <div className="inline-flex text-black gap-2 text-2xl items-center">
           {link ? (
-            <a href={link} target="_blank" rel="noopener noreferrer" className='bg-gray-700 p-2 rounded-2xl'>
+            <a href={link} target="_blank" rel="noopener noreferrer" className='bg-gray-700 p-2 rounded-2xl hover:bg-purple-800'>
               <img src={imgsrc} alt="" className={size} />
             </a>
           ) : (

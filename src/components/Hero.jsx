@@ -4,16 +4,26 @@ import Typewriter from "./Typewriter";
 
 export default function Hero() {
   return (
-    <div className="bg-black text-white tracking-widest font-roboto p-4">
-      <div className="flex justify-between items-center">
-        <div className="flex flex-col">
-        <h1 className="text-4xl font-bold mb-3">Emmanuel Jaimes</h1>
-          <Typewriter size="text-3xl" 
-          words={['Software Engineer', 'University of Iowa Graduate', 'Dallas Native', 'Craft Bartender','Music Enthusiast', 'Intramural Futsal Champion']}/>
+    <div className="bg-black text-white tracking-widest font-roboto p-6">
+      <div className="flex flex-col md:flex-row justify-between items-center gap-6 md:gap-0">
+        {/* Left: Name + Typewriter */}
+        <div className="flex flex-col items-center md:items-start text-center md:text-left">
+          <h1 className="text-4xl md:text-5xl font-bold mb-3">Emmanuel Jaimes</h1>
+          <Typewriter
+            size="text-2xl md:text-3xl"
+            words={[
+              "Software Engineer",
+              "University of Iowa Graduate",
+              "Dallas Native",
+              "Craft Bartender",
+              "Music Enthusiast",
+              "Intramural Futsal Champion",
+            ]}
+          />
         </div>
-        
 
-        <div className="flex gap-12">
+        {/* Right: Social Icons */}
+        <div className="grid grid-cols-2 md:flex justify-center md:justify-end gap-6">
           <SocialIcon
             href="https://www.linkedin.com/in/jaimes-emmanuel"
             src="/imgs/Linkedin.svg"
@@ -41,7 +51,6 @@ export default function Hero() {
           />
         </div>
       </div>
-      
     </div>
   );
 }

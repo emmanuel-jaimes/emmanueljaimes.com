@@ -22,7 +22,7 @@ function Switch() {
 
   return (
     <div className="min-h-screen overflow flex flex-col items-center pt-8 transition-all duration-500">
-      {/* Navigation Menu */}
+      {/* nav menu */}
       <div className="flex gap-4 mb-6">
         {Object.keys(sections).map((tab) => (
           <button
